@@ -1,0 +1,229 @@
+/*general */
+html {
+    scroll-behavior: smooth; 
+ }
+ h2{
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 1;
+ }
+ body{
+    font-family: "Noto Sans", serif;
+    background-color:#F8FAFC;
+ }
+
+#main {
+    margin: 50px;
+}
+ /* Navigation bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  position: sticky;
+  padding: 5px 16px;
+  font-size: 20px;
+  background-image: linear-gradient(#F8FAFC, transparent);
+  z-index: 5;
+  font-weight: 449;
+}
+/* Left side (Irisography and Instagram logo) */
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+/* Styling for the brand name */
+.brand {
+  font-weight: 536;
+  font-size: 30px;
+  margin-right: 10px;
+}
+/* Right side (Links) */
+.nav-right {
+  display: flex;
+}
+/* Navigation links */
+.navbar a {
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+}
+/* Instagram logo */
+#navimg {
+  height: 30px;
+}
+/*top preview home*/
+#preview {
+    height: 800px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* three columns */
+    gap: 20px; /* Adjust spacing between items */
+    padding: 20px;
+    text-align: center;
+}
+.preimg{
+    height: 750px;
+    width: auto;
+}
+/*Services*/
+#services {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* three columns */
+    gap: 20px; /* Adjust spacing between items */
+    padding: 20px;
+    text-align: center; 
+}
+.servimg{
+    height: 300px;
+    width: auto;
+}
+/*bottom preview home*/
+.botpre {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* four columns */
+    gap: 20px; /* Adjust spacing between items */
+    padding: 20px;
+    text-align: center; 
+}
+.botimg{
+    height: 550px;
+    width: auto;
+}
+/*footer*/
+#footer {
+    height: 275px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* three columns */
+    gap: 20px; /* Adjust spacing between items */
+    padding-top: 30px;
+    text-align: center; 
+    background-color:#BCCCDC;
+}
+.footid{
+    text-align: center;
+    margin: 0px;
+    background-color: #BCCCDC;
+    height: 50px;
+}
+/*about.html*/
+#abouttext{
+    text-align: center;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* three columns */
+    gap: 20px; /* Adjust spacing between items */
+    padding: 20px;
+    text-align: center;
+}
+/*Carousel portfolio*/
+* {box-sizing:border-box}
+
+.slideshow-container { /* Slideshow container */
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.mySlides { /* Hide the images by default */
+  display: none;
+}
+
+/*video gallery*/
+.vidgallery {
+  text-align: center;
+}
+/*gallery for street portraits and sports*/
+.gallery {
+    line-height:0;
+    -webkit-column-count:3; /* split it into 5 columns */
+    -webkit-column-gap:5px; /* give it a 5px gap between columns */
+    -moz-column-count:3;
+    -moz-column-gap:5px;
+    column-count:3;
+    column-gap:5px;
+ }
+ .gallery img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom:5px; /* to match column gap */
+ }
+ @media (max-width: 400px) {
+    #gallery {
+     -moz-column-count:    1;
+     -webkit-column-count: 1;
+     column-count:         1;
+    }
+ }
+ @media (max-width: 800px) {
+    #gallery {
+     -moz-column-count:    2;
+     -webkit-column-count: 2;
+     column-count:         2;
+    }
+ }
+ @media (max-width: 1000px) {z
+    #gallery {
+     -moz-column-count:    3;
+     -webkit-column-count: 3;
+     column-count:         3;
+    }
+ }
+ @media (max-width: 1200px) {
+    #gallery {
+     -moz-column-count:    4;
+     -webkit-column-count: 4;
+     column-count:         4;
+    }
+ }
+ /*cateogry buttons portfolio.html*/
+ /* Container needed to position the button. Adjust the width as needed */
+ .categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.catimg {
+  position: relative;
+  width: 100%;
+}
+
+/* Make the image responsive */
+.catimg img {
+  width: 100%;
+  height: auto;
+  filter: brightness(70%);
+  border-radius: 10px;
+}
+
+.catimg img:hover{
+  filter: brightness(100%);
+}
+
+/* Style the button and place it in the middle of the container/image */
+.catimg .imgbtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #F8FAFC;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.catimg .imgbtn:hover {
+  background-color: #BCCCDC;
+}
