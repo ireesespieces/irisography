@@ -58,8 +58,8 @@ html {
     height: 800px;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* three columns */
-    gap: 2%; /* Adjust spacing between items */
-    padding: 2%;
+    gap: 20px; /* Adjust spacing between items */
+    padding: 20px;
     text-align: center;
 }
 .preimg{
@@ -71,8 +71,8 @@ html {
     height: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* three columns */
-    gap: 2%; /* Adjust spacing between items */
-    padding: 2%;
+    gap: 20px; /* Adjust spacing between items */
+    padding: 20px;
     text-align: center; 
 }
 .servimg{
@@ -97,7 +97,7 @@ html {
     height: 275px;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* three columns */
-    gap: 2%; /* Adjust spacing between items */
+    gap: 20px; /* Adjust spacing between items */
     padding-top: 30px;
     text-align: center; 
     background-color:#BCCCDC;
@@ -114,7 +114,7 @@ html {
     height: 400px;
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* three columns */
-    gap: 2%; /* Adjust spacing between items */
+    gap: 20px; /* Adjust spacing between items */
     padding: 20px;
     text-align: center;
 }
