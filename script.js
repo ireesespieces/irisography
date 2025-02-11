@@ -12,3 +12,14 @@ function showSlides() {
   slides[slideIndex - 1].style.animation = "slideIn 1.5s ease-in-out";
   setTimeout(showSlides, 3000);
 }
+function toggleMenu() {
+  if (window.innerWidth < 500) { // Only toggle menu if screen is less than 500px
+      document.querySelector('.nav-right').classList.toggle('open');
+      document.querySelector('.overlay').classList.toggle('active');
+  }
+}
+
+function closeMenu() {
+  document.querySelector('.nav-right').classList.remove('open');
+  document.querySelector('.overlay').classList.remove('active');
+}

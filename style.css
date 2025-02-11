@@ -49,12 +49,78 @@ html {
   text-decoration: none;
   color: black;
 }
+
+/* mobile nav bar */
+/* Hamburger Button (hidden by default on large screens) */
+/* Navbar container */
+
+/* Hide menu for small screens initially */
+@media screen and (max-width: 500px) {
+  .nav-right {
+      position: fixed;
+      top: 0;
+      right: -100%; /* Hide off-screen */
+      width: 30%;
+      height: 100vh;
+      background: white;
+      box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+      transition: right 0.3s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      padding-top: 50px;
+      z-index: 1001;
+  }
+
+  /* Show menu when active */
+  .nav-right.open {
+      right: 0;
+  }
+
+  /* Hamburger button styling */
+  .hamburger {
+      display: block;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      z-index: 1002;
+  }
+
+  /* Overlay */
+  .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.5);
+      display: none;
+      z-index: 1000;
+  }
+
+  .overlay.active {
+      display: block;
+  }
+}
+
+/* Hide close button on larger screens */
+@media screen and (min-width: 500px) {
+  .close-btn {
+      display: none;
+  }
+  .hamburger {
+    display: none;
+  }
+}
 /* Instagram logo */
 #navimg {
   height: 30px;
 }
 /*top preview home*/
-#preview {
+.preview {
     height: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* three columns */
@@ -66,8 +132,33 @@ html {
   position: relative;
   width: 100%;
 }
+/*mobile device transformation omg!!!*/
+@media screen and (max-width: 500px) {
+  h2{
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1;
+  }
+  .preview {
+    grid-template-columns: 1fr; /* 1 column */
+    grid-template-rows: repeat(3, auto); /* 3 rows, each taking auto height */
+  }
+  .botpre {
+    gap: 5px !important;
+    padding: 5px !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .services {
+    grid-template-columns: 1fr !important; /* 1 column */
+    grid-template-rows: repeat(3, auto) /* 3 rows, each taking auto height */ !important; 
+  }
+  .abouttext{
+    grid-template-columns: 1fr !important; /* 1 column */
+    grid-template-columns: repeat(1, auto); /* three columns */
+  }
+}
 /*Services*/
-#services {
+.services {
     height: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* three columns */
@@ -109,14 +200,14 @@ html {
     height: 50px;
 }
 /*about.html*/
-#abouttext{
+.abouttext{
     text-align: center;
     height: 400px;
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* three columns */
     gap: 20px; /* Adjust spacing between items */
     padding: 20px;
-    text-align: center;
+    height: auto;
 }
 /*Carousel portfolio*/
 * {box-sizing:border-box}
@@ -184,18 +275,15 @@ html {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
-
 .column {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-
 .catimg {
   position: relative;
   width: 100%;
 }
-
 /* Make the image responsive */
 .catimg img {
   width: 100%;
@@ -203,11 +291,9 @@ html {
   filter: brightness(70%);
   border-radius: 10px;
 }
-
 .catimg img:hover{
   filter: brightness(100%);
 }
-
 /* Style the button and place it in the middle of the container/image */
 .catimg .imgbtn {
   position: absolute;
