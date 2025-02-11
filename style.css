@@ -55,7 +55,7 @@ html {
 /* Navbar container */
 
 /* Hide menu for small screens initially */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   .nav-right {
       position: fixed;
       top: 0;
@@ -107,7 +107,7 @@ html {
 }
 
 /* Hide close button on larger screens */
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 800px) {
   .close-btn {
       display: none;
   }
@@ -133,7 +133,7 @@ html {
   width: 100%;
 }
 /*mobile device transformation omg!!!*/
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   h2{
     font-size: 50px;
     font-weight: 500;
