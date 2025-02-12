@@ -197,7 +197,7 @@ html {
     text-align: center;
     margin: 0px;
     background-color: #BCCCDC;
-    height: 50px;
+    height: auto;
 }
 /*about.html*/
 .abouttext{
