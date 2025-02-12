@@ -49,6 +49,9 @@ html {
   text-decoration: none;
   color: black;
 }
+#leftpad {
+  padding:0px !important;
+}
 
 /* mobile nav bar */
 /* Hamburger Button (hidden by default on large screens) */
