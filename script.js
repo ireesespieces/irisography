@@ -13,7 +13,7 @@ function showSlides() {
   setTimeout(showSlides, 3000);
 }
 function toggleMenu() {
-  if (window.innerWidth < 500) { // Only toggle menu if screen is less than 500px
+  if (window.innerWidth < 800) { // Only toggle menu if screen is less than 500px
       document.querySelector('.nav-right').classList.toggle('open');
       document.querySelector('.overlay').classList.toggle('active');
   }
