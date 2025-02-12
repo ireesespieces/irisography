@@ -12,7 +12,7 @@ html {
     background-color:#F8FAFC;
  }
 
-#main {
+.main {
     margin: 50px;
 }
  /* Navigation bar */
@@ -156,6 +156,9 @@ html {
     grid-template-columns: 1fr !important; /* 1 column */
     grid-template-columns: repeat(1, auto); /* three columns */
   }
+  .main {
+    margin: 15px !important;
+}
 }
 /*Services*/
 .services {
